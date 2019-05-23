@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/layoutID"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/enter_item"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/day_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tile"
+                android:layout_marginTop="5dp"
+                android:entries="@array/days" />
+
+            <EditText
+                android:id="@+id/nameItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day_spinner"
+                android:layout_marginTop="10dp"
+                android:hint="@string/hint_item" />
+
+            <EditText
+                android:id="@+id/placeItem"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameItem"
+                android:layout_marginTop="10dp"
+                android:hint="@string/placeHint" />
+
+            <EditText
+                android:id="@+id/teacherItem"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeItem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginEnd="0dp"
+                android:hint="@string/teacher_hint" />
+
+            <TextView
+                android:id="@+id/start_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacherItem"
+                android:text="@string/start"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/end_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacherItem"
+                android:layout_marginLeft="103dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toRightOf="@id/start_tile"
+                android:text="@string/end"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_tile"
+                android:hint="@string/start_hour_hint"
+                android:inputType="numberDecimal"
+                android:maxLength="@integer/max_length" />
+
+
+            <EditText
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end_tile"
+                android:layout_alignStart="@+id/teacherItem"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/start_time"
+                android:hint="@string/start_hour_hint"
+                android:inputType="numberDecimal"
+                android:maxLength="@integer/max_length" />
+
+
+            <Spinner
+                android:id="@+id/class_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_time"
+                android:entries="@array/class_type"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/class_type_spinner"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:text="@string/save_title"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

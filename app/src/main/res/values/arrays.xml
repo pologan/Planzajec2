@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="class_type">
+        <item>Wykład</item>
+        <item>Laboratorium</item>
+        <item>Ćwiczenia</item>
+        <item>Seminarium</item>
+        <item>Projekt</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days">
+        <item>Poniedziałek A</item>
+        <item>Poniedziałek B</item>
+        <item>Wtorek A</item>
+        <item>Wtorek B</item>
+        <item>Środa A</item>
+        <item>Środa B</item>
+        <item>Czwartek A</item>
+        <item>Czwartek B</item>
+        <item>Piątek A</item>
+        <item>Piątek B</item>
+    </string-array>
+</resources>
